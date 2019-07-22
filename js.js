@@ -1,22 +1,21 @@
-days = new daysMale(ll);
-days[0] = "Kwasi"
-days[1] = "Kwadwo"
-days[2] = "Kwabena"
-days[3] = "Kwaku"
-days[4] = "Yaw"
-days[5] = "Kofi"
-days[6] = "Kwame"      
-
-days = new daysFemale(gg);
-days[0] = "Akosua"
-days[1] = "Adwoa"
-days[2] = "Abenaa"
-days[3] = "Akua"
-days[4] = "Yaa"
-days[5] = "Afua"
-days[6] = "Ama"
-function myFunction(form) {
-
+var daysMale=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var days = daysMale[0];
+           daysMale[1];
+           daysMale[2];
+           daysMale[3];
+           daysMale[4];
+           daysMale[5];
+           daysMale[6];     
+var daysFemale=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+var days = daysFemale[0];
+           daysFemale[1];
+           daysFemale[2];
+           daysFemale[3];
+           daysFemale[4];
+           daysFemale[5];
+           daysFemale[6];
+function myFunction(form){
+    
 var DD = parseInt(form.day.days)
 DD=document.getElementById("Day").value
 if ((DD < 0) || (DD > 31)) {
@@ -41,5 +40,7 @@ result=document.getElementById("result")
 if (gender=="male" && days==0) {
    
 }
-if (gender=="male" && days==1)result.innerHTML="Kwadwo"; 
+if (gender=="male" && days==1){
+
+} 
 } 
