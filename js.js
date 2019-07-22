@@ -33,6 +33,11 @@ alert("Are you sure?")
 }
 var gender=document.querySelector('input[name="gender"]:checked').value;
 var CC = parseInt((YY-1)/(100 + 1))   
-result ((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7);      
-}
+result ((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7); 
+result=document.getElementById("result")   
 
+if (gender=="male" && days==0) {
+   
+}
+if (gender=="male" && days==1)result.innerHTML="Kwadwo"; 
+} 
