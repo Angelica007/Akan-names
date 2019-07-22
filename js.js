@@ -1,4 +1,4 @@
-days = new daysMale(7);
+days = new daysMale(ll);
 days[0] = "Kwasi"
 days[1] = "Kwadwo"
 days[2] = "Kwabena"
@@ -7,7 +7,7 @@ days[4] = "Yaw"
 days[5] = "Kofi"
 days[6] = "Kwame"      
 
-days = new daysFemale(7);
+days = new daysFemale(gg);
 days[0] = "Akosua"
 days[1] = "Adwoa"
 days[2] = "Abenaa"
@@ -16,6 +16,7 @@ days[4] = "Yaa"
 days[5] = "Afua"
 days[6] = "Ama"
 function myFunction(form) {
+
 var DD = parseInt(form.day.days)
 DD=document.getElementById("Day").value
 if ((DD < 0) || (DD > 31)) {
@@ -32,6 +33,7 @@ if (YY < 1900) {
 alert("Are you sure?")
 }
 var gender=document.querySelector('input[name="gender"]:checked').value;
+console.log(gender);
 var CC = parseInt((YY-1)/(100 + 1))   
 result ((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7); 
 result=document.getElementById("result")   
