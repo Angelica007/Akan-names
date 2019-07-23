@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
   <style type="text/css">
     body{
-        background-image: url("https://images.pexels.com/photos/272976/pexels-photo-272976.jpeg");
+        background-image: url("https://images.pexels.com/photos/955454/pexels-photo-955454.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
     }  
     main{
-      background-color: rgba(212, 215, 219, 0.253);
+      background-color: rgba(162, 165, 170, 0.253);
     }
     p{
         color: black;
@@ -44,7 +44,6 @@
   transition: 0.5s;
   padding-top: 5px;
 }
-
 .sidebar a {
   padding: 1px 1px 1px 5px;
   text-decoration: none;
@@ -53,11 +52,9 @@
   display: block;
   transition: 0.3s; 
 }
-
 .sidebar a:hover {
   color: #f1f1f1;
 }
-
 .sidebar .closebtn {
   position: inherit;
   top: 5px;
@@ -65,7 +62,6 @@
   font-size: 16px;
   margin-left: 15px;
 }
-
 .openbtn {
   font-size: 15px;
   cursor: pointer;
@@ -74,11 +70,9 @@
   padding: 5px 5px;
   border: none;
 }
-
 .openbtn:hover {
   background-color: #444;
 }
-
 #main {
   transition: margin-left .5s;
   padding: 5px;
@@ -132,7 +126,7 @@ button{
 <body style="text-align: center"><br><br><br><br><br>
   <main>
       <h1 style="text-align: center">The Day Of The Weeks In Form Of Aknan Names.</h1>
-      <br>
+      <br><br>
       <h2>Enter your birthday dates and get your name!</h2><br><br>
           <form>
               <h2>Date:</h2><div class="well"><input type="tel" maxlength="2" id="Day"></div><br>
@@ -142,15 +136,14 @@ button{
               <h2>Year:</h2><div class="well"> <input type="tel" maxlength="4" id="Year"></div>
                 <br>
             <h2>Your Gender</h2>
-              <input type="radio" name="gender" value="male"> Male<br>
-              <input type="radio" name="gender" value="female"> Female<br>
-              <input type="radio" name="gender" value="other"> Other <br><br><br>
+              <input type="radio" name="gender" value="male" class="gender"> Male<br>
+              <input type="radio" name="gender" value="female" class="gender"> Female<br>
             
-              <input type="button" value="GetDay" onclick="myFunction(form)">
+              <input type="button" onClick="myFunction()" value="GetDay">
               <input type="reset" value="Clear"> 
 
             <h2>The day of the week</h2>
-               <input type="text" name="result2" id="demo" size="35">
+               <input type="text" name="result" id="demo" size="35">
   
               </form><br><br><br>
 
