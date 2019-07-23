@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
   <style type="text/css">
     body{
-        background-image: url("https://images.pexels.com/photos/272976/pexels-photo-272976.jpeg");
-        background-color: rgb(232, 235, 239, 0.3);
+        background-image: url("https://images.pexels.com/photos/955454/pexels-photo-955454.jpeg");
+        background-color: rgba(213, 217, 223, 0.3);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -104,48 +104,37 @@ main{
 
     </style>
 </head>
-<nav class="navbar" style="background-color: rgb(184, 177, 114);">
-  <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-          <a href="about.html">Calculate</a>
-          <a href="contact.html">Contacts</a>
-        </div>
-        
-        <div id="main">
-          <button class="openbtn" onclick="openNav()">☰</button>
-
-          <div class="container-fluid">
-
-                  <div class="navbar-header">
-        
-                      <a class="navbar-brand" style="color: rgb(43, 37, 37)">DoB</a>
-        
-                  </div>
-        
-                  <div nav nav-pills >
-        
-                      <ul class="nav navbar-nav navbar-right">
-        
-                          <li class="active"><a href="#index" style="color: black">Home</a></li>
-        
-                        </ul>
- </div> 
-
-</div>
-
-</nav>  
-<script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  </script>
 <body><br><br><br><br>
+  <nav class="navbar" style="background-color: rgb(184, 177, 114);">
+    <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="about.html">Calculate</a>
+            <a href="contact.html">Contacts</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+  
+            <div class="container-fluid">
+  
+                    <div class="navbar-header">
+          
+                        <a class="navbar-brand" style="color: rgb(43, 37, 37)">DoB</a>
+          
+                    </div>
+          
+                    <div nav nav-pills >
+          
+                        <ul class="nav navbar-nav navbar-right">
+          
+                            <li class="active"><a href="#index" style="color: black">Home</a></li>
+          
+                          </ul>
+   </div> 
+  
+  </div>
+  
+  </nav>  
   <main>
           <h1 style="color: rgb(63, 29, 2) ; text-align: center; font-weight: 100">AKAN NAMES</h1><br><br>
 
@@ -155,13 +144,23 @@ main{
       
               Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.Take a look on the picture below:</p><br>
       
-      <img src="https://www.researchgate.net/profile/Annelies_Kusters/publication/288001994/figure/tbl2/AS:614079748120585@1523419429250/2-Day-Names-in-Akan-Culture.png" alt="Akan name" class="center"><br><br>
+      <img src="https://www.crownme.shop/wp-content/uploads/2018/06/dayoftheweek.jpg" alt="Akan name" class="center"><br><br><br>
           
   </main>
  
       <footer style="background-color:rgb(190, 188, 164); text-align: center">
               <p><h6>Copyrights by Angelica @ 2019</h6></p>
             </footer>
-            <script src="js.js"></script>     
+            <script>
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+              </script>           
 </body>
 </html>
