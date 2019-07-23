@@ -1,38 +1,75 @@
-days = new daysMale(7);
-days[0] = "Kwasi"
-days[1] = "Kwadwo"
-days[2] = "Kwabena"
-days[3] = "Kwaku"
-days[4] = "Yaw"
-days[5] = "Kofi"
-days[6] = "Kwame"      
+function myFunction(){
+ var male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
-days = new daysFemale(7);
-days[0] = "Akosua"
-days[1] = "Adwoa"
-days[2] = "Abenaa"
-days[3] = "Akua"
-days[4] = "Yaa"
-days[5] = "Afua"
-days[6] = "Ama"
-function myFunction(form) {
-var DD = parseInt(form.day.days)
-DD=document.getElementById("Day").value
+               
+var female=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+   
+var DD=document.getElementById("Day").value;
 if ((DD < 0) || (DD > 31)) {
 alert("Check again your date!")
 }
-var MM = parseInt(form.month.days)
-MM=document.getElementById("Month")
+
+var MM=document.getElementById("Month").value;     
 if ((MM < 0) || (MM > 12)) {
 alert("Check again your month!")
 }  
-var YY = parseInt(form.year.days)
-YY=document.getElementById("Year")
+var YY=document.getElementById("Year").value;
 if (YY < 1900) {
 alert("Are you sure?")
 }
-var gender=document.querySelector('input[name="gender"]:checked').value;
-var CC = parseInt((YY-1)/(100 + 1))   
-result ((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7);      
+var CC = parseInt((YY-1)/(100 + 1));  
+result=((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7);
+var gender = document.forms[0];
+  var txt = "";
+  var i;
+  for (i = 0; i < gender.length; i++) {
+        if ((gender[i].value=="male") && (result==0)){
+            document.getElementById("demo").value="Your Akan name is" + male[0];
+        }
+        if ((gender[i].value=="male") && (result==1)){
+            document.getElementById("demo").value="Your Akan name is" + male[1];
+        }
+        if ((gender[i].value=="male") && (result==2)){
+            document.getElementById("demo").value="Your Akan name is" + male[2];
+        }
+        if ((gender[i].value=="male") && (result==3)){
+            document.getElementById("demo").value="Your Akan name is" + male[3];
+        }
+        if ((gender[i].value=="male") && (result==4)){
+            document.getElementById("demo").value="Your Akan name is" + male[4];
+        }
+        if ((gender[i].value=="male") && (result==5)){
+            document.getElementById("demo").value="Your Akan name is" + male[5];
+        }
+        if ((gender[i].value=="male") && (result==6)){
+            document.getElementById("demo").value="Your Akan name is" + male[6];
+        }
+      else {
+           alert("Your information may be invalid!")
+      }  
+        if ((gender[i].value=="female") && (result==0)){
+            document.getElementById("demo").value="Your Akan name is" + female[0];
+        }
+        if ((gender[i].value=="female") && (result==1)){
+            document.getElementById("demo").value="Your Akan name is" + female[1];
+        }
+        if ((gender[i].value=="female") && (result==2)){
+            document.getElementById("demo").value="Your Akan name is" + female[2];
+        }
+        if ((gender[i].value=="female") && (result==3)){
+            document.getElementById("demo").value="Your Akan name is" + female[3];
+        }
+        if ((gender[i].value=="female") && (result==4)){
+            document.getElementById("demo").value="Your Akan name is" + female[4];
+        }
+        if ((gender[i].value=="female") && (result==5)){
+            document.getElementById("demo").value="Your Akan name is" + female[5];
+        }
+        if ((gender[i].value=="female") && (result==6)){
+            document.getElementById("demo").value="Your Akan name is" + female[6];
+        }
+      else{
+          alert("Your information may be invalid")
+      }  
+    }
 }
-
