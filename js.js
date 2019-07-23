@@ -1,3 +1,5 @@
+
+         
 function myFunction(){
  var male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
@@ -73,3 +75,4 @@ var gender = document.forms[0];
       }  
     }
 }
+
