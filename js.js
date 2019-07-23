@@ -19,12 +19,14 @@ var YY=document.getElementById("Year").value;
 if (YY < 1900) {
 alert("Are you sure?")
 }
+var DD = parseInt(day);
+var MM = parseInt(month);
+var YY = parseInt(year);
+
 var CC = parseInt((YY-1)/(100 + 1));  
-result=((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7);
-var gender = document.forms[0];
-  var txt = "";
-  var i;
-  for (i = 0; i < gender.length; i++) {
+ var result=((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) %7);
+ var result=parseInt(result);
+
         if ((gender[i].value=="male") && (result==0)){
             document.getElementById("demo").value="Your Akan name is" + male[0];
         }
@@ -74,5 +76,5 @@ var gender = document.forms[0];
           alert("Your information may be invalid")
       }  
     }
-}
+
 
