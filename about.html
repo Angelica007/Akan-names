@@ -134,22 +134,33 @@ button{
       <h1 style="text-align: center">The Day Of The Weeks In Form Of Aknan Names.</h1>
       <br><br>
       <h2>Enter your birthday dates and get your name!</h2><br><br>
-          <form>
-              <h2>Date:</h2><div class="well"><input type="tel" maxlength="2" id="Day"></div><br>
-
-              <h2>Month:</h2><div class="well"><input type="tel" maxlength="2" id="Month"></div>  <br>
-
-              <h2>Year:</h2><div class="well"> <input type="tel" maxlength="4" id="Year"></div>
-                <br>
+          <form id="dayWeeks" action="">
+            <p class="well">
+              <label for="dates">Date</label>
+              <input id="dates" name="dates" type="number" />
+            </p>
+            <p class="well">
+              <label for="month">Month</label>
+              <input id="month" name="month" type="number" />
+            </p>
+            <p class="well">
+              <label for="year">Year</label>
+              <input id="year" name="year" type="tel" />
+            </p>
             <h2>Your Gender</h2>
-              <input type="radio" name="gender" value="male" class="gender"> Male<br>
-              <input type="radio" name="gender" value="female" class="gender"> Female<br>
-            
-              <input type="button" onClick="myFunction()" value="GetDay">
-              <input type="reset" value="Clear"> 
-
-            <h2>The day of the week</h2>
-               <input type="text" name="result"id="demo"  size="35">
+              <p>
+                <input type="radio" name="gender" value="male" > Male<br>
+              <input type="radio" name="gender" value="female" > Female<br>
+              </p> 
+            <p>
+              <input type="submit" value="Calculate" />
+              or
+              <input type="reset" value="Reset" />
+            </p>
+            <p class="well">
+              <label for="aknan">Aknan name</label>
+              <input id="aknan" name="aknan" type="text" />
+            </p>
   
               </form><br><br><br>
 
